@@ -168,6 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4em auto;
+}
+header ul {
+  display: flex;
+  color: #212529;
+}
+header a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0 1.5em;
+  font-weight: 600;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
