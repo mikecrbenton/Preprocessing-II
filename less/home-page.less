@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 @import "global";
 
 .main-header {
@@ -76,6 +77,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        // PARAMETRIC MIXIN FOR CLASS    
+        .button-global-class(@eastern-blue @main-bg, 10px);
+      }
     }
   }
 }// home

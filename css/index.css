@@ -264,3 +264,16 @@ header a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: white ;
+  border-radius: 10px ;
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-align: center;
+  width: 80%;
+  padding: 0.8em 1em;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #1fc8e3;
+}
