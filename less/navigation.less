@@ -1,5 +1,6 @@
 // Navigation Styles here
 @import "variables";
+@import "mixins";
 @import "global";
 
 header {
@@ -14,6 +15,11 @@ header {
         max-width: 800px;
         width: 100%;
         margin: 3em auto;
+
+        @media @mobile {
+            flex-direction: column;
+            //START HERE TOMORROW+++++++++++++++++++++++++++++++++++++++++++++++++
+        }
     }
     ul {
         display: flex;
