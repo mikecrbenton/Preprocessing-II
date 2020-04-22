@@ -12,10 +12,22 @@
   }
   h2 {
     margin-top: .75em;
+
+    @media @mobile {
+      //start here------------------------
+      width: 80%;
+      font-size: 2.75rem;
+      font-weight: 600;
+    }
   }
   p {
     padding-bottom: 1em;
     border-bottom: 2px dashed @silver;
+  }
+
+   //MOBILE SIZING FOR CONTAINER
+   @media @mobile {
+    width: 90%;
   }
 }
 
@@ -27,8 +39,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -84,4 +94,9 @@
       }
     }
   }
+  //MOBILE SIZING FOR CONTAINER
+  @media @mobile {
+    width: 90%;
+  }
+
 }// home
