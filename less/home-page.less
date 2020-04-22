@@ -14,7 +14,6 @@
     margin-top: .75em;
 
     @media @mobile {
-      //start here------------------------
       width: 80%;
       font-size: 2.75rem;
       font-weight: 600;
@@ -33,70 +32,134 @@
 
 .home {
 
+  //MAIN SECTION
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    //"LET'S GO!"**********************************
+    h2{
+      @media @mobile{
+      font-weight: @header-mobile;
+      }
+    } 
+    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-right:0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left:0;
+      }
 
       img {
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      flex-direction: column;
+    }
   }
 
+  //"ADVENTURE AWAITS!"**********************************
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile{
+        order: 1;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        order: 2;
+      }
     }
   }
 
+  //"PICK YOUR DESTINATION!"**********************************
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
+    h2{
+      @media @mobile{
+      font-weight: @header-mobile;
+      }
+    }
+
     img {
       border-radius: 10px;
     }
+
+    //MOBILE SIZING FOR CONTAINER
+      @media @mobile {
+      width: 100%;
+    }
   }
 
+  //BOTTOM SECTION ( FUN, MOUNTAIN, ISLAND )*********************
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    //"EACH OF THE 3 DIV SECTIONS
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
-      .btn {
-        // PARAMETRIC MIXIN FOR CLASS    
+      .btn {  
         .button-global-class(@eastern-blue, @main-bg, 10px);
+
+        @media @mobile {
+          width: 100%;
+          padding: .8em 0;
+          font-size: 1.8rem;
+          border-radius: 15px;
+        }
       }
+
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto 30px;
+      }
+
     }
+    @media @mobile {
+      flex-direction: column;
+    }
+
   }
+
+
   //MOBILE SIZING FOR CONTAINER
   @media @mobile {
     width: 90%;
   }
 
-}// home
+}// end of .home
