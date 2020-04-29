@@ -1,1 +1,17 @@
 // Mixins in here
+
+.button-global-class(@background,@fontColor,@borderRadius) {
+    background-color: @background ;
+    color: @fontColor ;
+    border-radius: @borderRadius ;
+    font-size: 1.75rem ;
+    font-weight: 900;
+    text-align: center;
+    width: 80%;
+    padding: .8em 1em ;
+
+    &:hover {
+        background-color: lighten(@eastern-blue, 10%);
+    }
+
+}
